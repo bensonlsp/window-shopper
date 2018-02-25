@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		C12F9C5020429C2600909DEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C4F20429C2600909DEB /* AppDelegate.swift */; };
-		C12F9C5220429C2600909DEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C5120429C2600909DEB /* ViewController.swift */; };
+		C12F9C5220429C2600909DEB /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C5120429C2600909DEB /* MainVC.swift */; };
 		C12F9C5520429C2600909DEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C12F9C5320429C2600909DEB /* Main.storyboard */; };
 		C12F9C5720429C2600909DEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12F9C5620429C2600909DEB /* Assets.xcassets */; };
 		C12F9C5A20429C2600909DEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C12F9C5820429C2600909DEB /* LaunchScreen.storyboard */; };
+		C12F9C6520429FD000909DEB /* CurrencyTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C6420429FD000909DEB /* CurrencyTxtField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C12F9C4C20429C2600909DEB /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12F9C4F20429C2600909DEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C12F9C5120429C2600909DEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C12F9C5120429C2600909DEB /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		C12F9C5420429C2600909DEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C12F9C5620429C2600909DEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C12F9C5920429C2600909DEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C12F9C5B20429C2600909DEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C12F9C6420429FD000909DEB /* CurrencyTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTxtField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		C12F9C4E20429C2600909DEB /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				C12F9C6320429D8300909DEB /* Controller */,
+				C12F9C6220429D7A00909DEB /* Model */,
+				C12F9C6120429D7600909DEB /* View */,
 				C12F9C4F20429C2600909DEB /* AppDelegate.swift */,
-				C12F9C5120429C2600909DEB /* ViewController.swift */,
 				C12F9C5320429C2600909DEB /* Main.storyboard */,
 				C12F9C5620429C2600909DEB /* Assets.xcassets */,
 				C12F9C5820429C2600909DEB /* LaunchScreen.storyboard */,
 				C12F9C5B20429C2600909DEB /* Info.plist */,
 			);
 			path = "window-shopper";
+			sourceTree = "<group>";
+		};
+		C12F9C6120429D7600909DEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C12F9C6420429FD000909DEB /* CurrencyTxtField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C12F9C6220429D7A00909DEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C12F9C6320429D8300909DEB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C12F9C5120429C2600909DEB /* MainVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C12F9C5220429C2600909DEB /* ViewController.swift in Sources */,
+				C12F9C6520429FD000909DEB /* CurrencyTxtField.swift in Sources */,
+				C12F9C5220429C2600909DEB /* MainVC.swift in Sources */,
 				C12F9C5020429C2600909DEB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
